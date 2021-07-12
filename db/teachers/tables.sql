@@ -14,10 +14,8 @@ CREATE TABLE teachers(
 
 -- COURSES
 CREATE TABLE courses (
-    course_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    course TEXT UNIQUE NOT NULL,
-    teacher_id INTEGER NOT NULL,
-    FOREIGN KEY (teacher_id) REFERENCES teachers(teacher_id)
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT UNIQUE NOT NULL
 );
 
 
